@@ -1,15 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <div class="AboutView">
+        <div style="width: 85%;">
+            <TheWelcome />
+        </div>
+    </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<script setup>
+import TheWelcome from '../components/TheWelcome.vue'
+</script>
+
+<style scoped lang="scss">
+.AboutView {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 100px;
 }
 </style>
